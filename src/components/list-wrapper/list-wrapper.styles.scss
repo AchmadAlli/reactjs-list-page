@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+.list-wrapper{
+  font-family: 'Nunito', sans-serif;
+  color: #5c5c5c;
+  padding: 30px;
+  margin-bottom: 100px;
+  box-shadow: 0px 3px 5px 3px #2d3a440e;
+
+
+  &__table{
+    width: 100%;
+    margin: 30px 0;
+    font-size: 1.1rem;
+
+    & thead{
+      font-weight: bold;
+      height: 3rem;
+      line-height: 3rem;
+      background-color: #0e1c2909;
+
+      & td:first-child{
+        width: 5%;
+        text-align: center;
+      }
+    }
+  }
+} 
