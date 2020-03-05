@@ -1,0 +1,37 @@
+.pagination-item{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  margin: 0 10px;
+  border: 1.3px solid #49A9FF;
+  color: #49A9FF;
+  background-color: transparent;
+  border-radius: 80px;
+
+  &__control{
+    fill: red
+  }
+
+  &__active{
+    background: #49A9FF;
+    color: white;
+  }
+  
+  &:hover{
+    background: #49A9FF;
+    color: white;
+  }
+
+  &--disable{
+    border: 1.3px solid #49aaff86;
+    color: #49aaff86;
+
+    &:hover{
+      background: inherit;
+      color: #49aaff86;
+    }
+  }
+}
