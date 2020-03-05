@@ -9,12 +9,24 @@ class Pagination extends Component{
   
     this.state = {
        current: 1,
-       items: [1, 2]
+       items: this.generatePageNumber(props.items)
     }
 
     this.nextItem = this.nextItem.bind(this);
     this.prevItem = this.prevItem.bind(this);
     this.changePage = this.changePage.bind(this);
+  }
+
+  generatePageNumber(chunkedData){
+    let result = [];
+    for(let index = 1; index <= chunkedData.length; index++){
+      result.push(index)
+    }
+
+    console.log(result);
+    console.log(this.props.items);    
+
+    return result;
   }
   
   nextItem(){

@@ -28,6 +28,41 @@ const data = [
     price: "4.200.000"
   },
   {
+    id: 6,
+    name: "Achmad Ali Baidlowi",
+    invoice: "11221238123123",
+    date: "13 Januari 2019",
+    price: "1.450.000"
+  },
+  {
+    id: 7,
+    name: "Achmad Ali Baidlowi",
+    invoice: "11221238123123",
+    date: "13 Januari 2019",
+    price: "3.000.000"
+  },
+  {
+    id: 8,
+    name: "Achmad Ali Baidlowi",
+    invoice: "11221238123123",
+    date: "13 Januari 2019",
+    price: "5.300.000"
+  },
+  {
+    id: 9,
+    name: "Irfan Bachdim",
+    invoice: "991999299112323",
+    date: "29 Maret 2019",
+    price: "4.200.000"
+  },
+  {
+    id: 10,
+    name: "Bamabang Pamungkas",
+    invoice: "891283891238",
+    date: "13 April 2019",
+    price: "2.430.000"
+  },
+  {
     id: 5,
     name: "Achmad Ali Baidlowi",
     invoice: "11221238123123",

@@ -48,7 +48,7 @@ class listWrapper extends Component {
             }
           </tbody>
         </table>
-        <Pagination getPage={this.getCurrentPage} items={listData.length} />
+        <Pagination getPage={this.getCurrentPage} items={listData} />
       </div>
     )
   }
