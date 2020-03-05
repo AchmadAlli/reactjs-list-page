@@ -8,9 +8,9 @@ export default function navbar() {
 			<div className="navbar__wrapper">
 				<img src={NavbarLogo} height="60px" alt="come logo"/>
 				<ul className="navbar__nav-item">
-					<li className="active"> Dashboard </li>
+					<li> Dashboard </li>
 					<li> Campaigns </li>
-					<li> Payment </li>
+					<li className="active"> Payment </li>
 					<li> logout </li>
 				</ul>
 			</div>
