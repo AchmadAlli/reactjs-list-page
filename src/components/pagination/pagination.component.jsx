@@ -9,28 +9,36 @@ class Pagination extends Component{
   
     this.state = {
        current: 1,
-       items: [
-         1,2,3,4
-       ]
+       items: [1, 2]
     }
 
     this.nextItem = this.nextItem.bind(this);
     this.prevItem = this.prevItem.bind(this);
+    this.changePage = this.changePage.bind(this);
   }
   
   nextItem(){
     const { current, items } = this.state;
     
     if(current < items.length){
-      this.setState({current: this.state.current + 1})
+      this.setState({current: this.state.current + 1}, )
+      this.props.getPage(current + 1)
     }
   }
 
   prevItem(){
     const { current } = this.state;
 
-    if(current > 1 )
-    this.setState({current: this.state.current - 1})
+    if(current > 1 ){
+      this.setState({current: this.state.current - 1})
+      this.props.getPage(current - 1)
+    }
+  }
+
+  changePage(item){
+    this.setState({current: item})
+    this.props.getPage(item)
+
   }
 
   render(){
@@ -44,7 +52,7 @@ class Pagination extends Component{
           isPrevAvailable(current)
         }
         {
-          items.map((item, index) => <PaginationItem content={item} isActive={current - 1  === index} /> )
+          items.map((item, index) => <PaginationItem key={index} content={item} isActive={current - 1  === index} clickEvent={() => this.changePage(item)} /> )
         }
         {
           isNextAvailable(current)
